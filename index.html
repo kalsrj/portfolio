@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lebenslauf - Khaled Siraj</title>
+    <title 
+        data-de="Lebenslauf - Khaled Siraj"
+        data-en="Resume - Khaled Siraj">
+        Lebenslauf - Khaled Siraj
+    </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* --- Grundlegendes Styling (LinkedIn Style) --- */
@@ -72,28 +76,33 @@
 
         .lang-switch{
 
-        position:absolute;
+            position:absolute;
 
-        right:20px;
+            right:20px;
 
-        top:10px;
+            top:10px;
 
         }
 
         .lang-switch button{
 
-        background:none;
+            background:none;
 
-        border:none;
+            border:none;
 
-        font-weight:bold;
+            font-weight:bold;
 
-        cursor:pointer;
+            cursor:pointer;
 
-        color:#507aa3;
+            color:#507aa3;
 
-        margin-left:5px;
+            margin-left:5px;
 
+        }
+        .lang-switch img{
+            width:20px;
+            height:auto;
+            border-radius:2px;
         }
 
         /* --- HEADER BEREICH --- */
@@ -907,17 +916,22 @@
 
     <nav>
         <ul>
-            <li><a href="#header">Über mich</a></li>
-            <li><a href="#beruf">Erfahrung</a></li>
-            <li><a href="#studium">Studium</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#hobbys">Interessen</a></li>
-            <li><a href="#zeugnisse">Zeugnisse</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
-        <!--    <div class="lang-switch">
-                <button onclick="setLanguage('de')">DE</button>
-                <button onclick="setLanguage('en')">EN</button>
-            </div> -->
+            <li><a href="#header" data-de="Über mich" data-en="About">Über mich</a></li>
+            <li><a href="#beruf" data-de="Erfahrung" data-en="Experience">Erfahrung</a></li>
+            <li><a href="#studium" data-de="Studium" data-en="Education">Studium</a></li>
+            <li><a href="#skills" data-de="Skills" data-en="Skills">Skills</a></li>
+            <li><a href="#hobbys" data-de="Interessen" data-en="Interests">Interessen</a></li>
+            <li><a href="#zeugnisse" data-de="Zeugnisse" data-en="Certificates">Zeugnisse</a></li>
+            <li><a href="#kontakt" data-de="Kontakt" data-en="Contact">Kontakt</a></li>
+            <div class="lang-switch">
+            <button onclick="setLanguage('de')">
+                <img src="https://flagcdn.com/w20/de.png"> DE
+            </button>
+
+            <button onclick="setLanguage('en')">
+                <img src="https://flagcdn.com/w20/gb.png"> EN
+            </button>
+            </div>
         </ul>
     </nav>
 
@@ -931,141 +945,361 @@
 
             <div class="header-info">
                 <h1>Khaled Siraj</h1>
-                <p class="subtitle">M.Sc. International Production Engineering and Management</p>
-                <div class="contact-mini">
-                    <i class="fas fa-map-marker-alt"></i> Erlangen, Deutschland
+                <p class="subtitle"
+                data-de="M.Sc. International Production Engineering and Management"
+                data-en="M.Sc. International Production Engineering and Management">
+                M.Sc. International Production Engineering and Management
+                </p>
+                <div class="contact-mini"
+                    data-de='<i class="fas fa-map-marker-alt"></i> Erlangen, Deutschland'
+                    data-en='<i class="fas fa-map-marker-alt"></i> Erlangen, Germany'>
+                <i class="fas fa-map-marker-alt"></i> Erlangen, Deutschland
                 </div>
             </div>
         </div>
 
         <div class="about-section">
-            <h2>Über mich</h2>
-            <p class="about-text">
-Ingenieur mit mehr als sechs Jahren praktischer Erfahrung als Werkstudent in Industrie, Technologie und Kundenservice. Mein akademischer Hintergrund verbindet Produktionstechnik, Digitalisierung und Management mit fundierten Kenntnissen in Programmierung und Datenanalyse.
-<br><br>
-Während meiner Tätigkeit im Research & Development bei Valeo eAutomotive unterstützte ich die Optimierung digitaler Entwicklungsprozesse, entwickelte Software-Tools zur Datenanalyse und arbeitete mit ALM-Systemen wie Siemens Polarion zur Steuerung von Engineering-Projekten. Darüber hinaus sammelte ich Erfahrung im Bereich Computer Vision und industrieller Bildverarbeitung bei Intego sowie im kundenorientierten Vertrieb und Service bei Peek & Cloppenburg.
-<br><br>
-Ich zeichne mich durch eine hohe Lösungsorientierung aus und suche nun eine Herausforderung, bei der ich meine interdisziplinären Fähigkeiten in Vollzeit einbringen kann.
-</p>
+            <h2 data-de="Über mich" data-en="About Me">Über mich</h2>
+
+            <p class="about-text"
+            data-de="Ingenieur mit mehr als sechs Jahren praktischer Erfahrung als Werkstudent in Industrie, Technologie und Kundenservice. Mein akademischer Hintergrund verbindet Produktionstechnik, Digitalisierung und Management mit fundierten Kenntnissen in Programmierung und Datenanalyse.<br><br>Während meiner Tätigkeit im Research & Development bei Valeo eAutomotive unterstützte ich die Optimierung digitaler Entwicklungsprozesse, entwickelte Software-Tools zur Datenanalyse und arbeitete mit ALM-Systemen wie Siemens Polarion zur Steuerung von Engineering-Projekten. Darüber hinaus sammelte ich Erfahrung im Bereich Computer Vision und industrieller Bildverarbeitung bei Intego sowie im kundenorientierten Vertrieb und Service bei Peek & Cloppenburg.<br><br>Ich zeichne mich durch eine hohe Lösungsorientierung aus und suche nun eine Herausforderung, bei der ich meine interdisziplinären Fähigkeiten in Vollzeit einbringen kann."
+            data-en="Engineer with more than six years of practical experience as a working student in industry, technology, and customer service. My academic background combines production engineering, digitalization, and management with strong skills in programming and data analysis.<br><br>During my role in Research & Development at Valeo eAutomotive, I contributed to optimizing digital development processes, developed software tools for data analysis, and worked with ALM systems such as Siemens Polarion to manage engineering projects. Additionally, I gained experience in computer vision and industrial image processing at Intego, as well as in customer-oriented sales and service at Peek & Cloppenburg.<br><br>I am highly solution-oriented and currently seeking a full-time opportunity where I can apply my interdisciplinary skills."> 
+            Ingenieur mit mehr als sechs Jahren praktischer Erfahrung als Werkstudent in Industrie, Technologie und Kundenservice. Mein akademischer Hintergrund verbindet Produktionstechnik, Digitalisierung und Management mit fundierten Kenntnissen in Programmierung und Datenanalyse.<br><br>Während meiner Tätigkeit im Research & Development bei Valeo eAutomotive unterstützte ich die Optimierung digitaler Entwicklungsprozesse, entwickelte Software-Tools zur Datenanalyse und arbeitete mit ALM-Systemen wie Siemens Polarion zur Steuerung von Engineering-Projekten. Darüber hinaus sammelte ich Erfahrung im Bereich Computer Vision und industrieller Bildverarbeitung bei Intego sowie im kundenorientierten Vertrieb und Service bei Peek & Cloppenburg.<br><br>Ich zeichne mich durch eine hohe Lösungsorientierung aus und suche nun eine Herausforderung, bei der ich meine interdisziplinären Fähigkeiten in Vollzeit einbringen kann.    
+        </p>
         </div>
     </header>
 
 
-    <h2 class="section-title fade-in" id="beruf">Berufserfahrung</h2>
-    <div class="timeline-section fade-in">
+    <h2 class="section-title"
+    data-de="Berufserfahrung"
+    data-en="Work Experience">Berufserfahrung</h2>
+    <div class="timeline-section fade-in" id="beruf">
 
-          <div class="container">
-            <div class="date-bubble date-start">Heute</div>
+            <div class="container">
+            <div class="date-bubble date-start" data-de="Heute" data-en="Present">Heute</div>
             <div class="date-line line-top"></div>
-            <div class="date-bubble date-end">09/2025</div>
+            <div class="date-bubble date-end"
+            data-de="09/2025" data-en="Sep 2025">09/2025</div>
             <div class="date-line line-bottom"></div>
 
             <div class="flip-card" onclick="flipCard(this)">
                 <div class="flip-card-inner">
+
+                    <!-- FRONT -->
                     <div class="flip-card-front">
                         <div class="card-header-row">
                             <div class="logo-placeholder">
-                                <img src="pc.png" alt="PC Logo"></div>
+                                <img src="pc.png" alt="PC Logo">
+                            </div>
+
                             <div class="card-header-text">
-                                <h2>Sales & Customer Service</h2>
+                                <h2 
+                                data-de="Sales & Customer Service" 
+                                data-en="Sales & Customer Service">
+                                Sales & Customer Service
+                                </h2>
+
                                 <span class="role">Peek & Cloppenburg</span>
-                                <div class="sub-info">Werkstudent (Sales Assistant)</div>
+
+                                <div class="sub-info"
+                                data-de="Werkstudent (Sales Consultant)"
+                                data-en="Working Student (Sales Consultant)">
+                                Werkstudent (Sales Consultant)
+                                </div>
                             </div>
                         </div>
-                        <div class="click-hint">Klicke für Details <i class="fas fa-arrow-right"></i></div>
+
+                        <div class="click-hint"
+                            data-de='Klicke für Details <i class="fas fa-arrow-right"></i>'
+                            data-en='Click for details <i class="fas fa-arrow-right"></i>'>
+                            Klicke für Details <i class="fas fa-arrow-right"></i>
+                        </div>
                     </div>
+
+                    <!-- BACK -->
                     <div class="flip-card-back">
                         <ul>
-                            <li><strong>Kundenberatung & Verkauf:</strong> Unterstützung bei der Beratung von Kundinnen und Kunden sowie Sicherstellung eines positiven Einkaufserlebnisses im Verkaufshaus.</li>
-                            <li><strong>Warenpräsentation & Visual Merchandising:</strong> Aufbau und Präsentation von Warenflächen sowie Unterstützung bei der ansprechenden Gestaltung der Verkaufsfläche.</li>
-                            <li><strong>Warenmanagement:</strong> Unterstützung bei der Warenverräumung, Sortierung und Pflege des Sortiments auf der Verkaufsfläche.</li>
-                            <li><strong>Teamarbeit im Verkauf:</strong> Zusammenarbeit mit verschiedenen Teams und Einblicke in unterschiedliche Fachbereiche des Verkaufshauses.</li>
+
+                            <li 
+                            data-de="<strong>Kundenberatung & Service:</strong> Professionelle Betreuung von Kundinnen und Kunden mit Fokus auf individuelle Bedürfnisse und hohe Servicequalität."
+                            data-en="<strong>Customer consulting & service:</strong> Provided professional customer support with a strong focus on individual needs and high service quality.">
+                            <strong>Kundenberatung & Service:</strong> Professionelle Betreuung von Kundinnen und Kunden mit Fokus auf individuelle Bedürfnisse und hohe Servicequalität.
+                            </li>
+
+                            <li 
+                            data-de="<strong>Kundenbindung & Kommunikation:</strong> Aufbau langfristiger Kundenbeziehungen sowie sichere und lösungsorientierte Gesprächsführung."
+                            data-en="<strong>Customer relationship management:</strong> Built long-term customer relationships and communicated in a solution-oriented manner.">
+                            <strong>Kundenbindung & Kommunikation:</strong> Aufbau langfristiger Kundenbeziehungen sowie sichere und lösungsorientierte Gesprächsführung.
+                            </li>
+
+                            <li 
+                            data-de="<strong>Organisation & Warenmanagement:</strong> Strukturierte Pflege von Warenbeständen sowie Unterstützung bei Warenaufbau und Sortimentsorganisation."
+                            data-en="<strong>Inventory & organization:</strong> Managed product organization and supported stock handling and assortment structure.">
+                            <strong>Organisation & Warenmanagement:</strong> Strukturierte Pflege von Warenbeständen sowie Unterstützung bei Warenaufbau und Sortimentsorganisation.
+                            </li>
+
+                            <li 
+                            data-de="<strong>Verkaufsfördernde Maßnahmen:</strong> Mitwirkung bei der ansprechenden Präsentation von Produkten und Gestaltung der Verkaufsfläche."
+                            data-en="<strong>Visual merchandising:</strong> Contributed to attractive product presentation and store layout.">
+                            <strong>Verkaufsfördernde Maßnahmen:</strong> Mitwirkung bei der ansprechenden Präsentation von Produkten und Gestaltung der Verkaufsfläche.
+                            </li>
+
+                            <li 
+                            data-de="<strong>Effiziente Arbeitsweise:</strong> Zuverlässiges und selbstständiges Arbeiten auch bei hoher Auslastung."
+                            data-en="<strong>Efficient working style:</strong> Worked independently and reliably even under high workload.">
+                            <strong>Effiziente Arbeitsweise:</strong> Zuverlässiges und selbstständiges Arbeiten auch bei hoher Auslastung.
+                            </li>
+
+                            <li 
+                            data-de="<strong>Teamarbeit & Flexibilität:</strong> Enge Zusammenarbeit im Team sowie schnelle Einarbeitung in neue Aufgabenbereiche."
+                            data-en="<strong>Teamwork & adaptability:</strong> Collaborated closely within teams and adapted quickly to new tasks.">
+                            <strong>Teamarbeit & Flexibilität:</strong> Enge Zusammenarbeit im Team sowie schnelle Einarbeitung in neue Aufgabenbereiche.
+                            </li>
+
+                            <li 
+                            data-de="<strong>Weiterbildung & Entwicklung:</strong> Teilnahme an Schulungen zur Weiterentwicklung von Kommunikations- und Vertriebsfähigkeiten."
+                            data-en="<strong>Training & development:</strong> Participated in trainings to enhance communication and sales skills.">
+                            <strong>Weiterbildung & Entwicklung:</strong> Teilnahme an Schulungen zur Weiterentwicklung von Kommunikations- und Vertriebsfähigkeiten.
+                            </li>
+
                         </ul>
                     </div>
+
                 </div>
             </div>
-        </div> 
+        </div>
 
         <div class="container">
-            <div class="date-bubble date-start">09/2024</div>
+
+            <!-- DATUM -->
+            <div class="date-bubble date-start"
+                data-de="09/2024"
+                data-en="Sep 2024">
+                09/2024
+            </div>
+
             <div class="date-line line-top"></div>
-            <div class="date-bubble date-end">04/2019</div>
+
+            <div class="date-bubble date-end"
+                data-de="04/2019"
+                data-en="Apr 2019">
+                04/2019
+            </div>
+
             <div class="date-line line-bottom"></div>
 
             <div class="flip-card h-800" onclick="flipCard(this)">
                 <div class="flip-card-inner">
+
+                    <!-- FRONT -->
                     <div class="flip-card-front">
                         <div class="card-header-row">
                             <div class="logo-placeholder">
-                                <img src="valeo.png" alt="Valeo Logo"></div>
+                                <img src="valeo.png" alt="Valeo Logo">
+                            </div>
+
                             <div class="card-header-text">
-                                <h2>Research and Development</h2>
+                                <h2 
+                                data-de="Research & Development" 
+                                data-en="Research & Development">
+                                Research & Development
+                                </h2>
+
                                 <span class="role">Valeo eAutomotive Germany GmbH</span>
-                                <div class="sub-info">Werkstudent (Software- und Prozessmanagement)</div>
+
+                                <div class="sub-info"
+                                data-de="Werkstudent (Software- & Prozessmanagement)"
+                                data-en="Working Student (Software & Process Management)">
+                                Werkstudent (Software- & Prozessmanagement)
+                                </div>
                             </div>
                         </div>
-                        <div class="click-hint">Klicke für Details <i class="fas fa-arrow-right"></i></div>
+
+                        <div class="click-hint"
+                            data-de='Klicke für Details <i class="fas fa-arrow-right"></i>'
+                            data-en='Click for details <i class="fas fa-arrow-right"></i>'>
+                            Klicke für Details <i class="fas fa-arrow-right"></i>
+                        </div>
                     </div>
+
+                    <!-- BACK -->
                     <div class="flip-card-back">
-                        <div class="card-image-placeholder"><img src="polarion1.png" alt="Polarion ALM" style="object-fit: contain; background: rgb(253, 252, 252);"></div>
-                        <h2>Tätigkeiten</h2>
+
+                        <div class="card-image-placeholder">
+                            <img src="polarion1.png" alt="Polarion ALM" style="object-fit: contain; background: rgb(253,252,252);">
+                        </div>
+
+                        <h2 
+                        data-de="Tätigkeiten" 
+                        data-en="Responsibilities">
+                        Tätigkeiten
+                        </h2>
+
                         <ul>
-                            <li><strong>Prozessmanagement & Digitalisierung:</strong> Unterstützung bei der Standardisierung und Optimierung digitaler Entwicklungsprozesse innerhalb der ALM-Plattform Siemens Polarion zur effizienteren Steuerung von R&D-Projekten.</li>
-                            <li><strong>Software-Tools & Datenanalyse:</strong> Entwicklung von Reports, Skripten und Software-Tools zur Analyse von Entwicklungsdaten sowie zur Vereinfachung von Konfigurations- und Verwaltungsprozessen.</li>
-                            <li><strong>ALM & Systemadministration:</strong> Pflege und Administration zentraler R&D-Tools (ALM-System Polarion), einschließlich Benutzerverwaltung, Workflow-Anpassungen und Bearbeitung von Change Requests.</li>
-                            <li><strong>Prozessoptimierung:</strong> Automatisierung von Daten- und Arbeitsprozessen in Google Sheets mittels Google Apps Script zur Effizienzsteigerung und Reduzierung manueller Arbeitsschritte.</li>
-                            <li><strong>Schnittstellenmanagement:</strong> Unterstützung internationaler Engineering-Teams durch technischen Support, Bearbeitung von KPI- und Report-Anfragen sowie Koordination bei Prozess- und Systemänderungen.</li>
+
+                            <li 
+                            data-de="<strong>Prozessmanagement & Digitalisierung:</strong> Unterstützung bei der Standardisierung und Optimierung digitaler Entwicklungsprozesse innerhalb der ALM-Plattform Siemens Polarion."
+                            data-en="<strong>Process management & digitalization:</strong> Supported the standardization and optimization of digital development processes within the ALM platform Siemens Polarion.">
+                            <strong>Prozessmanagement & Digitalisierung:</strong> Unterstützung bei der Standardisierung und Optimierung digitaler Entwicklungsprozesse innerhalb der ALM-Plattform Siemens Polarion.
+                            </li>
+
+                            <li 
+                            data-de="<strong>Datenanalyse & Software-Tools:</strong> Entwicklung von Reports, Skripten und Tools zur Analyse von Entwicklungsdaten sowie zur Automatisierung von Konfigurations- und Verwaltungsprozessen."
+                            data-en="<strong>Data analysis & software tools:</strong> Developed reports, scripts and tools for analyzing engineering data and automating configuration and management processes.">
+                            <strong>Datenanalyse & Software-Tools:</strong> Entwicklung von Reports, Skripten und Tools zur Analyse von Entwicklungsdaten sowie zur Automatisierung von Konfigurations- und Verwaltungsprozessen.
+                            </li>
+
+                            <li 
+                            data-de="<strong>ALM-System & Administration:</strong> Betreuung und Weiterentwicklung des ALM-Systems Polarion, einschließlich Benutzerverwaltung, Workflow-Anpassungen und Change Requests."
+                            data-en="<strong>ALM system & administration:</strong> Maintained and enhanced the ALM system Polarion, including user management, workflow customization and handling change requests.">
+                            <strong>ALM-System & Administration:</strong> Betreuung und Weiterentwicklung des ALM-Systems Polarion, einschließlich Benutzerverwaltung, Workflow-Anpassungen und Change Requests.
+                            </li>
+
+                            <li 
+                            data-de="<strong>Automatisierung & Effizienzsteigerung:</strong> Automatisierung von Daten- und Arbeitsprozessen in Google Sheets mittels Apps Script zur Reduktion manueller Tätigkeiten."
+                            data-en="<strong>Automation & efficiency improvement:</strong> Automated data and workflows in Google Sheets using Apps Script, reducing manual effort.">
+                            <strong>Automatisierung & Effizienzsteigerung:</strong> Automatisierung von Daten- und Arbeitsprozessen in Google Sheets mittels Apps Script zur Reduktion manueller Tätigkeiten.
+                            </li>
+
+                            <li 
+                            data-de="<strong>Schnittstellenmanagement & Support:</strong> Technischer Support für internationale Engineering-Teams sowie Bearbeitung von KPI- und Reporting-Anfragen."
+                            data-en="<strong>Interface management & support:</strong> Provided technical support to international engineering teams and handled KPI and reporting requests.">
+                            <strong>Schnittstellenmanagement & Support:</strong> Technischer Support für internationale Engineering-Teams sowie Bearbeitung von KPI- und Reporting-Anfragen.
+                            </li>
+
                         </ul>
+
                     </div>
+
                 </div>
             </div>
         </div>
-
         <div class="container">
-            <div class="date-bubble date-start">08/2017</div>
+
+            <!-- DATUM -->
+            <div class="date-bubble date-start"
+                data-de="08/2017"
+                data-en="Aug 2017">
+                08/2017
+            </div>
+
             <div class="date-line line-top"></div>
-            <div class="date-bubble date-end">05/2017</div>
+
+            <div class="date-bubble date-end"
+                data-de="05/2017"
+                data-en="May 2017">
+                05/2017
+            </div>
+
             <div class="date-line line-bottom"></div>
 
-            <div class="flip-card h-800" onclick="flipCard(this)">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <div class="card-header-row">
-                            <div class="logo-placeholder">
-                                <img src="intego2.jpg" alt="Intego Logo">
+                <div class="flip-card h-800" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+
+                        <!-- FRONT -->
+                        <div class="flip-card-front">
+                            <div class="card-header-row">
+                                <div class="logo-placeholder">
+                                    <img src="intego2.jpg" alt="Intego Logo">
+                                </div>
+
+                                <div class="card-header-text">
+                                    <h2 
+                                    data-de="Computer Vision" 
+                                    data-en="Computer Vision">
+                                    Computer Vision
+                                    </h2>
+
+                                    <span class="role">Intego GmbH</span>
+
+                                    <div class="sub-info"
+                                    data-de="Praktikant (Industrielle Bildverarbeitung)"
+                                    data-en="Intern (Industrial Image Processing)">
+                                    Praktikant (Industrielle Bildverarbeitung)
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="card-header-text">
-                                <h2>Computer Vision</h2>
-                                <span class="role">Intego GmbH</span>
-                                <div class="sub-info">Praktikant (Industrielle Bildverarbeitung)</div>
+                            <div class="click-hint"
+                                data-de='Klicke für Details <i class="fas fa-arrow-right"></i>'
+                                data-en='Click for details <i class="fas fa-arrow-right"></i>'>
+                                Klicke für Details <i class="fas fa-arrow-right"></i>
                             </div>
                         </div>
-                        <div class="click-hint">Klicke für Details <i class="fas fa-arrow-right"></i></div>
-                    </div>
 
-                    <div class="flip-card-back">
-                        <div class="card-image-placeholder"><img src="intego1.png" alt="Intego Maschine" style="object-fit: contain; background: rgb(253, 252, 252);"></div>
-                        <h2>Tätigkeiten</h2>
-                        <ul>
-                            <li><strong>Programmierung & Softwareentwicklung:</strong> Einarbeitung in die Programmiersprache Python sowie Entwicklung erster Skripte zur Analyse und Verarbeitung von Mess- und Bilddaten.</li>
-                            <li><strong>Bildverarbeitungssysteme:</strong> Einarbeitung in die proprietäre grafische Programmierumgebung Inspector sowie in die grundlegenden Methoden der industriellen Bildverarbeitung.</li>
-                            <li><strong>Versuchs- und Testdurchführung:</strong> Unterstützung bei Voruntersuchungen an verschiedenen Prüfteilen sowie Durchführung und Dokumentation von Testreihen zur Analyse von Material- und Oberflächeneigenschaften.</li>
-                            <li><strong>Technische Dokumentation:</strong> Erstellung strukturierter Testberichte und Auswertung von Versuchsergebnissen zur Unterstützung der Entwicklungsabteilung.</li>
-                            <li><strong>Technische Recherche & Konzeptentwicklung:</strong> Unterstützung bei der Recherche und Analyse neuer Prüfmethoden sowie Mitwirkung bei der Entwicklung von Prüfkonzepten für industrielle Bildverarbeitungssysteme.</li>
-                        </ul>
+                        <!-- BACK -->
+                        <div class="flip-card-back">
+
+                            <div class="card-image-placeholder">
+                                <img src="intego1.png" alt="Intego Machine" style="object-fit: contain; background: rgb(253,252,252);">
+                            </div>
+
+                            <h2 
+                            data-de="Tätigkeiten" 
+                            data-en="Responsibilities">
+                            Tätigkeiten
+                            </h2>
+
+                            <ul>
+
+                                <li 
+                                data-de="<strong>Programmierung & Datenverarbeitung:</strong> Einarbeitung in Python sowie Entwicklung erster Skripte zur Analyse und Verarbeitung von Mess- und Bilddaten."
+                                data-en="<strong>Programming & data processing:</strong> Learned Python and developed initial scripts for analyzing and processing measurement and image data.">
+                                <strong>Programmierung & Datenverarbeitung:</strong> Einarbeitung in Python sowie Entwicklung erster Skripte zur Analyse und Verarbeitung von Mess- und Bilddaten.
+                                </li>
+
+                                <li 
+                                data-de="<strong>Bildverarbeitungssysteme:</strong> Arbeit mit der grafischen Programmierumgebung Inspector sowie Anwendung grundlegender Methoden der industriellen Bildverarbeitung."
+                                data-en="<strong>Image processing systems:</strong> Worked with the Inspector software environment and applied core methods of industrial image processing.">
+                                <strong>Bildverarbeitungssysteme:</strong> Arbeit mit der grafischen Programmierumgebung Inspector sowie Anwendung grundlegender Methoden der industriellen Bildverarbeitung.
+                                </li>
+
+                                <li 
+                                data-de="<strong>Versuche & Testreihen:</strong> Durchführung und Dokumentation von Tests zur Analyse von Material- und Oberflächeneigenschaften."
+                                data-en="<strong>Testing & experimentation:</strong> Conducted and documented test series to analyze material and surface properties.">
+                                <strong>Versuche & Testreihen:</strong> Durchführung und Dokumentation von Tests zur Analyse von Material- und Oberflächeneigenschaften.
+                                </li>
+
+                                <li 
+                                data-de="<strong>Technische Dokumentation:</strong> Erstellung strukturierter Testberichte sowie Auswertung und Aufbereitung von Versuchsergebnissen."
+                                data-en="<strong>Technical documentation:</strong> Created structured test reports and evaluated experimental results.">
+                                <strong>Technische Dokumentation:</strong> Erstellung strukturierter Testberichte sowie Auswertung und Aufbereitung von Versuchsergebnissen.
+                                </li>
+
+                                <li 
+                                data-de="<strong>Recherche & Konzeptentwicklung:</strong> Unterstützung bei der Analyse neuer Prüfmethoden sowie Mitwirkung bei der Entwicklung von Prüfkonzepten."
+                                data-en="<strong>Research & concept development:</strong> Supported the analysis of new testing methods and contributed to the development of inspection concepts.">
+                                <strong>Recherche & Konzeptentwicklung:</strong> Unterstützung bei der Analyse neuer Prüfmethoden sowie Mitwirkung bei der Entwicklung von Prüfkonzepten.
+                                </li>
+
+                            </ul>
+
+                        </div>
+
                     </div>
                 </div>
-            </div>
-        </div>
+        </div>    
     </div>
-    <h2 class="section-title fade-in" id="studium">Studium</h2>
-    <div class="timeline-section fade-in">
+    <h2 class="section-title"
+    data-de="Studium"
+    data-en="Education">Studium</h2>
+    <div class="timeline-section fade-in" id="studium">
 
         <div class="container">
-            <div class="date-bubble date-start">02/2026</div>
+            <div class="date-bubble date-start"
+                data-de="02/2026"
+                data-en="Feb 2026">
+                02/2026
+            </div>
+
             <div class="date-line line-top"></div>
-            <div class="date-bubble date-end">04/2024</div>
+
+            <div class="date-bubble date-end"
+                data-de="04/2024"
+                data-en="Apr 2024">
+                04/2024
+            </div>
+
             <div class="date-line line-bottom"></div>
 
             <div class="flip-card h-600" onclick="flipCard(this)">
@@ -1077,10 +1311,16 @@ Ich zeichne mich durch eine hohe Lösungsorientierung aus und suche nun eine Her
                             <div class="card-header-text">
                                 <h2>M.Sc. International Production Engineering and Management</h2>
                                 <span class="role">FAU Erlangen-Nürnberg</span>
-                                <div class="sub-info">Abschluss: Master of Science</div>
+                                <div class="sub-info" data-de="Abschluss: Master of Science"
+                                data-en="Degree: Master of Science">
+                                Abschluss: Master of Science</div>
                             </div>
                         </div>
-                        <div class="click-hint">Klicke für Details <i class="fas fa-arrow-right"></i></div>
+                        <div class="click-hint"
+                            data-de='Klicke für Details <i class="fas fa-arrow-right"></i>'
+                            data-en='Click for details <i class="fas fa-arrow-right"></i>'>
+                            Klicke für Details <i class="fas fa-arrow-right"></i>
+                        </div>
                     </div>
 
                     <div class="flip-card-back" style="display: flex; flex-direction: column; justify-content: flex-start; align-items: stretch; text-align: left; padding: 25px; gap: 20px; overflow-y: auto;">
@@ -1088,37 +1328,156 @@ Ich zeichne mich durch eine hohe Lösungsorientierung aus und suche nun eine Her
                         <div>
                             <h3 style="margin-top: 0; color: #ffffff; border-bottom: 1px solid #ddd; padding-bottom: 5px;">Akademische Schwerpunkte</h3>
                             <ul style="margin-top: 10px; padding-left: 20px; font-size: 0.95rem;">
-                                <li><strong>Produktion, Automatisierung & Fertigungssysteme:<br></strong> Fertigungsautomatisierung, Produktionssystematik sowie effiziente Gestaltung moderner Fabriksysteme.<br> Analyse von Werkzeugmaschinen als mechatronische Systeme sowie Produktionsprozessen elektrischer Maschinen.<br> Optimierung industrieller Produktionsprozesse und operative Exzellenz im Fabrikbetrieb.</li>
-                                <li><strong>Digitalisierung, Industrie 4.0 & Daten:<br></strong> Internet of Things (IoT) und industrielle Services zur Vernetzung von Maschinen und Produktionssystemen.<br> Digitale Transformation von Organisationen sowie datenbasierte Entscheidungsprozesse in Unternehmen.<br>Web- und Internettechnologien zur Unterstützung digitaler Geschäfts- und Produktionsprozesse.</li>
-                                <li><strong>Innovation, Nachhaltigkeit & Management:<br></strong>Technology & Innovation Management sowie Change Management in technologieorientierten Organisationen.<br>Sustainable Technology Management und ressourceneffiziente Produktionssysteme.<br>Analyse globaler Wertschöpfungs- und Logistiksysteme im internationalen Kontext.</li>
+
+                                <li
+                                data-de="<strong>Produktion, Automatisierung & Fertigungssysteme:</strong> Fertigungsautomatisierung, Produktionssysteme sowie Optimierung industrieller Prozesse (Lean, Effizienz, Automatisierung)."
+                                data-en="<strong>Production, automation & manufacturing systems:</strong> Manufacturing automation, production systems, and optimization of industrial processes (lean, efficiency, automation).">
+                                <strong>Produktion, Automatisierung & Fertigungssysteme:</strong> Fertigungsautomatisierung, Produktionssysteme sowie Optimierung industrieller Prozesse (Lean, Effizienz, Automatisierung).
+                                </li>
+
+                                <li
+                                data-de="<strong>Digitalisierung, Industrie 4.0 & Daten:</strong> IoT, digitale Transformation sowie datenbasierte Entscheidungsfindung in Unternehmen (Data Analytics, Prozessdigitalisierung)."
+                                data-en="<strong>Digitalization, Industry 4.0 & data:</strong> IoT, digital transformation, and data-driven decision-making (data analytics, process digitalization).">
+                                <strong>Digitalisierung, Industrie 4.0 & Daten:</strong> IoT, digitale Transformation sowie datenbasierte Entscheidungsfindung in Unternehmen (Data Analytics, Prozessdigitalisierung).
+                                </li>
+
+                                <li
+                                data-de="<strong>Innovation, Nachhaltigkeit & Management:</strong> Technologie- und Innovationsmanagement, nachhaltige Produktionssysteme sowie globale Wertschöpfungsketten (Sustainability, Strategy)."
+                                data-en="<strong>Innovation, sustainability & management:</strong> Technology and innovation management, sustainable production systems, and global value chains (sustainability, strategy).">
+                                <strong>Innovation, Nachhaltigkeit & Management:</strong> Technologie- und Innovationsmanagement, nachhaltige Produktionssysteme sowie globale Wertschöpfungsketten (Sustainability, Strategy).
+                                </li>
+
                             </ul>
                         </div>
 
                         <div>
-                            <h3 style="margin-top: 0; color: #ffffff; border-bottom: 1px solid #ddd; padding-bottom: 5px;">Abschlussarbeit</h3>
 
-                            <div style="display: flex; flex-direction: row; align-items: center; gap: 15px; margin-top: 10px;">
+                            <h3 style="margin-top: 0; color: #ffffff; border-bottom: 1px solid #ddd; padding-bottom: 5px;"
+                            data-de="Masterarbeit"
+                            data-en="Master Thesis">
+                            Masterarbeit
+                            </h3>
+
+                            <div style="display: flex; flex-direction: row; align-items: flex-start; gap: 15px; margin-top: 10px;">
 
                                 <div style="flex: 1;">
-                                    <strong style="display: block; margin-bottom: 5px; text-decoration: none !important; border: none !important;">
-                                        Artificial Intelligence in Production and Logistics - Implementation Patterns and Employee Acceptance
+
+                                    <strong style="display: block; margin-bottom: 10px;">
+                                        Artificial Intelligence in Production and Logistics – Implementation Patterns and Employee Acceptance
                                     </strong>
-                                    <p style="margin: 0; font-size: 0.9rem;">
-                                       Analyse der Implementierung von KI-Technologien in Produktions- und Logistikprozessen mit Fokus auf organisatorische, technologische und menschliche Faktoren der Einführung. Basierend auf Experteninterviews wurden Implementierungsmuster, Erfolgsfaktoren sowie Herausforderungen bei der Integration von KI identifiziert und Empfehlungen für eine nachhaltige und mitarbeiterorientierte Einführung von KI in Unternehmen entwickelt.       
-                                    </p>
+
+                                    <ul style="padding-left: 20px; font-size: 0.9rem;">
+
+                                        <li
+                                        data-de="Analyse und Bewertung von KI-Use-Cases in Produktions- und Logistikprozessen"
+                                        data-en="Analysis and evaluation of AI use cases in production and logistics processes">
+                                        Analyse und Bewertung von KI-Use-Cases in Produktions- und Logistikprozessen
+                                        </li>
+
+                                        <li
+                                        data-de="Durchführung qualitativer Experteninterviews zum praktischen Einsatz von KI"
+                                        data-en="Conducted qualitative expert interviews on the practical application of AI">
+                                        Durchführung qualitativer Experteninterviews zum praktischen Einsatz von KI
+                                        </li>
+
+                                        <li
+                                        data-de="Identifikation von kritischen Erfolgsfaktoren und Akzeptanzmechanismen für KI-Systeme auf Mitarbeiterebene"
+                                        data-en="Identification of key success factors and employee acceptance mechanisms for AI systems">
+                                        Identifikation von kritischen Erfolgsfaktoren und Akzeptanzmechanismen für KI-Systeme auf Mitarbeiterebene
+                                        </li>
+
+                                        <li
+                                        data-de="Ableitung praxisorientierter Handlungsempfehlungen für die erfolgreiche Einführung von KI-Technologien"
+                                        data-en="Development of practical recommendations for successful AI implementation">
+                                        Ableitung praxisorientierter Handlungsempfehlungen für die erfolgreiche Einführung von KI-Technologien
+                                        </li>
+
+                                    </ul>
+
                                 </div>
 
-                                <div style="flex: 0 0 200px;"> <img src="mthesis.jpg" alt="Bild zur Arbeit" style="width: 100%; height: auto; border-radius: 4px; border: 1px solid #ccc;">
+                                <div style="flex: 0 0 200px;">
+                                    <img src="mthesis.jpg" alt="Master Thesis"
+                                    data-de-alt="Masterarbeit Bild"
+                                    data-en-alt="Master thesis image"
+                                    style="width: 100%; height: auto; border-radius: 4px; border: 1px solid #ccc;">
                                 </div>
+
                             </div>
-                        </div>
 
+                        </div>
                         <div>
-                            <h3 style="margin-top: 0; color: #ffffff; border-bottom: 1px solid #ddd; padding-bottom: 5px;">Praktika & Projekte</h3>
+
+                            <h3 style="margin-top: 0; color: #ffffff; border-bottom: 1px solid #ddd; padding-bottom: 5px;"
+                            data-de="Projekte & Praktika"
+                            data-en="Projects & Practical Experience">
+                            Praktika & Projekte
+                            </h3>
+
                             <ul style="margin-top: 10px; padding-left: 20px; font-size: 0.95rem;">
-                                <li><strong>Projektarbeit - Effect of Current Therapies for Stress Urinary Incontinence:<br></strong>Systematische Literaturanalyse zu aktuellen konservativen und chirurgischen Therapieverfahren zur Behandlung von Stressharninkontinenz. Bewertung der Wirksamkeit, Sicherheit und langfristigen Behandlungsergebnisse verschiedener Therapieansätze sowie Identifikation innovativer Technologien und minimalinvasiver Behandlungsmethoden.</li>
-                                <li><strong>FAPS Hochschulpraktikum - Elektromaschinenbau & Produktionstechnologie:<br></strong> Praktische Vertiefung von Fertigungs- und Produktionsprozessen elektrischer Maschinen im universitären Forschungsumfeld. Analyse von Herstellungs- und Montageprozessen elektrischer Antriebssysteme sowie Einblicke in moderne Produktions- und Automatisierungstechnologien.</li>
+
+                                <!-- PROJEKT -->
+                                <li>
+                                    <strong>
+                                        Effect of Current Therapies for Stress Urinary Incontinence
+                                    </strong>
+
+                                    <ul style="margin-top:5px; padding-left:18px;">
+
+                                        <li
+                                        data-de="Systematische Literaturanalyse konservativer und chirurgischer Therapieverfahren"
+                                        data-en="Systematic literature review of conservative and surgical treatment approaches">
+                                        Systematische Literaturanalyse konservativer und chirurgischer Therapieverfahren
+                                        </li>
+
+                                        <li
+                                        data-de="Bewertung von Wirksamkeit, Sicherheit und Langzeitergebnissen verschiedener Therapieansätze"
+                                        data-en="Evaluation of effectiveness, safety, and long-term outcomes of different therapies">
+                                        Bewertung von Wirksamkeit, Sicherheit und Langzeitergebnissen verschiedener Therapieansätze
+                                        </li>
+
+                                        <li
+                                        data-de="Identifikation innovativer Technologien und minimalinvasiver Behandlungsmethoden"
+                                        data-en="Identification of innovative technologies and minimally invasive treatment methods">
+                                        Identifikation innovativer Technologien und minimalinvasiver Behandlungsmethoden
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+                                <!-- PRAKTIKUM -->
+                                <li style="margin-top:10px;">
+                                    <strong
+                                    data-de="FAPS Hochschulpraktikum – Elektromaschinenbau & Produktionstechnologie"
+                                    data-en="FAPS University Internship – Electrical Machine Engineering & Production Technology">
+                                    FAPS Hochschulpraktikum – Elektromaschinenbau & Produktionstechnologie
+                                    </strong>
+
+                                    <ul style="margin-top:5px; padding-left:18px;">
+
+                                        <li
+                                        data-de="Analyse von Produktions- und Montageprozessen elektrischer Maschinen"
+                                        data-en="Analysis of production and assembly processes of electrical machines">
+                                        Analyse von Produktions- und Montageprozessen elektrischer Maschinen
+                                        </li>
+
+                                        <li
+                                        data-de="Einblicke in moderne Fertigungs- und Automatisierungstechnologien"
+                                        data-en="Exposure to modern manufacturing and automation technologies">
+                                        Einblicke in moderne Fertigungs- und Automatisierungstechnologien
+                                        </li>
+
+                                        <li
+                                        data-de="Praxisorientierte Anwendung von Produktions- und Engineering-Konzepten im universitären Umfeld"
+                                        data-en="Practical application of production and engineering concepts in an academic environment">
+                                        Praxisorientierte Anwendung von Produktions- und Engineering-Konzepten im universitären Umfeld
+                                        </li>
+
+                                    </ul>
+                                </li>
+
                             </ul>
+
                         </div>
 
                     </div>
@@ -1127,62 +1486,144 @@ Ich zeichne mich durch eine hohe Lösungsorientierung aus und suche nun eine Her
         </div>
 
         <div class="container">
-            <div class="date-bubble date-start">09/2023</div>
+
+            <div class="date-bubble date-start"
+                data-de="09/2023"
+                data-en="Sep 2023">
+                09/2023
+            </div>
+
             <div class="date-line line-top"></div>
-            <div class="date-bubble date-end">10/2019</div>
+
+            <div class="date-bubble date-end"
+                data-de="10/2019"
+                data-en="Oct 2019">
+                10/2019
+            </div>
+
             <div class="date-line line-bottom"></div>
 
             <div class="flip-card h-600" onclick="flipCard(this)">
                 <div class="flip-card-inner">
 
+                    <!-- FRONT -->
                     <div class="flip-card-front">
                         <div class="card-header-row">
-                            <div class="logo-placeholder"><img src="faulogo.png" alt="FAU Logo"></div>
+
+                            <div class="logo-placeholder">
+                                <img src="faulogo.png" alt="FAU Logo">
+                            </div>
+
                             <div class="card-header-text">
-                                <h2>B.Sc. International Production Engineering and Management</h2>
-                                <span class="role">FAU Erlangen-Nürnberg</span>
-                                <div class="sub-info">Abschluss: Bachelor of Science</div>
+
+                                <h2>
+                                    B.Sc. International Production Engineering and Management
+                                </h2>
+
+                                <span class="role">
+                                    FAU Erlangen-Nürnberg
+                                </span>
+
+                                <div class="sub-info"
+                                data-de="Abschluss: Bachelor of Science"
+                                data-en="Degree: Bachelor of Science">
+                                Abschluss: Bachelor of Science
+                                </div>
+
                             </div>
                         </div>
-                        <div class="click-hint">Klicke für Details <i class="fas fa-arrow-right"></i></div>
+
+                        <div class="click-hint"
+                            data-de='Klicke für Details <i class="fas fa-arrow-right"></i>'
+                            data-en='Click for details <i class="fas fa-arrow-right"></i>'>
+                            Klicke für Details <i class="fas fa-arrow-right"></i>
+                        </div>
                     </div>
 
                     <div class="flip-card-back" style="display: flex; flex-direction: column; justify-content: flex-start; align-items: stretch; text-align: left; padding: 25px; gap: 20px; overflow-y: auto;">
 
                         <div>
-                            <h3 style="margin-top: 0; color: #ffffff; border-bottom: 1px solid #ddd; padding-bottom: 5px;">Akademische Schwerpunkte</h3>
+                            <h3 style="margin-top: 0; color: #ffffff; border-bottom: 1px solid #ddd; padding-bottom: 5px;"
+                            data-de="Akademische Schwerpunkte"
+                            data-en="Key Areas">
+                            Akademische Schwerpunkte
+                            </h3>
+
                             <ul style="margin-top: 10px; padding-left: 20px; font-size: 0.95rem;">
-                                <li><strong>Informatik, Daten & Digitalisierung:<br></strong> Grundlagen der Informatik, Programmierung und algorithmisches Denken. <br> Machine Learning für Ingenieure: Einführung in Methoden, Datenanalyse und Modellierung technischer Datensätze.<br> Digitale Technologien zur Analyse und Optimierung industrieller Prozesse sowie datenbasierte Entscheidungsfindung.</li>
-                                <li><strong>Ingenieurmechanik, Konstruktion & Fertigung:<br></strong> Statik und Festigkeitslehre, Dynamik starrer Körper sowie mathematische Modellierung technischer Systeme.<br> Technische Darstellungslehre: CAD-basierte Konstruktion, normgerechte technische Zeichnungen und fertigungsgerechtes Design.<br>Fertigungstechnologien: Produktionstechnik, Umformtechnik, Kunststofftechnik sowie praktische Fertigungsprozesse.</li>
-                                <li><strong>Produktion, Qualität & industrielle Systeme:<br></strong>Produktionssystematik, Handhabungs- und Montagetechnik sowie integrierte Produktionssysteme.<br>Qualitätsmanagement und Messtechnik zur Sicherstellung stabiler industrieller Prozesse.<br> Internationale Supply-Chain- und Logistiksysteme sowie betriebswirtschaftliche Grundlagen für Ingenieure.</li>
+
+                                <li
+                                data-de="<strong>Informatik, Daten & Digitalisierung:<br></strong> Grundlagen der Informatik, Programmierung und algorithmisches Denken. <br> Machine Learning für Ingenieure: Einführung in Methoden, Datenanalyse und Modellierung technischer Datensätze.<br> Digitale Technologien zur Analyse und Optimierung industrieller Prozesse sowie datenbasierte Entscheidungsfindung."
+                                data-en="<strong>Computer science, data & digitalization:<br></strong> Fundamentals of computer science, programming, and algorithmic thinking.<br> Machine learning for engineers: introduction to methods, data analysis, and modeling of technical datasets.<br> Digital technologies for analyzing and optimizing industrial processes as well as data-driven decision-making.">
+                                <strong>Informatik, Daten & Digitalisierung:<br></strong> Grundlagen der Informatik, Programmierung und algorithmisches Denken. <br> Machine Learning für Ingenieure: Einführung in Methoden, Datenanalyse und Modellierung technischer Datensätze.<br> Digitale Technologien zur Analyse und Optimierung industrieller Prozesse sowie datenbasierte Entscheidungsfindung.
+                                </li>
+
+                                <li
+                                data-de="<strong>Ingenieurmechanik, Konstruktion & Fertigung:<br></strong> Statik und Festigkeitslehre, Dynamik starrer Körper sowie mathematische Modellierung technischer Systeme.<br> Technische Darstellungslehre: CAD-basierte Konstruktion, normgerechte technische Zeichnungen und fertigungsgerechtes Design.<br>Fertigungstechnologien: Produktionstechnik, Umformtechnik, Kunststofftechnik sowie praktische Fertigungsprozesse."
+                                data-en="<strong>Engineering mechanics, design & manufacturing:<br></strong> Statics and strength of materials, dynamics of rigid bodies, and mathematical modeling of technical systems.<br> Technical drawing: CAD-based design, standardized technical drawings, and design for manufacturing.<br> Manufacturing technologies: production engineering, forming technology, plastics engineering, and practical manufacturing processes.">
+                                <strong>Ingenieurmechanik, Konstruktion & Fertigung:<br></strong> Statik und Festigkeitslehre, Dynamik starrer Körper sowie mathematische Modellierung technischer Systeme.<br> Technische Darstellungslehre: CAD-basierte Konstruktion, normgerechte technische Zeichnungen und fertigungsgerechtes Design.<br>Fertigungstechnologien: Produktionstechnik, Umformtechnik, Kunststofftechnik sowie praktische Fertigungsprozesse.
+                                </li>
+
+                                <li
+                                data-de="<strong>Produktion, Qualität & industrielle Systeme:<br></strong>Produktionssystematik, Handhabungs- und Montagetechnik sowie integrierte Produktionssysteme.<br>Qualitätsmanagement und Messtechnik zur Sicherstellung stabiler industrieller Prozesse.<br> Internationale Supply-Chain- und Logistiksysteme sowie betriebswirtschaftliche Grundlagen für Ingenieure."
+                                data-en="<strong>Production, quality & industrial systems:<br></strong> Production systems, handling and assembly technology, and integrated production systems.<br> Quality management and metrology to ensure stable industrial processes.<br> International supply chain and logistics systems as well as business fundamentals for engineers.">
+                                <strong>Produktion, Qualität & industrielle Systeme:<br></strong>Produktionssystematik, Handhabungs- und Montagetechnik sowie integrierte Produktionssysteme.<br>Qualitätsmanagement und Messtechnik zur Sicherstellung stabiler industrieller Prozesse.<br> Internationale Supply-Chain- und Logistiksysteme sowie betriebswirtschaftliche Grundlagen für Ingenieure.
+                                </li>
+
                             </ul>
                         </div>
 
                         <div>
-                            <h3 style="margin-top: 0; color: #ffffff; border-bottom: 1px solid #ddd; padding-bottom: 5px;">Abschlussarbeit</h3>
+
+                            <h3 style="margin-top: 0; color: #ffffff; border-bottom: 1px solid #ddd; padding-bottom: 5px;"
+                            data-de="Abschlussarbeit"
+                            data-en="Bachelor Thesis">
+                            Abschlussarbeit
+                            </h3>
 
                             <div style="display: flex; flex-direction: row; align-items: center; gap: 15px; margin-top: 10px;">
 
                                 <div style="flex: 1;">
-                                    <strong style="display: block; margin-bottom: 5px; text-decoration: none !important; border: none !important;">
+                                    <strong style="display: block; margin-bottom: 5px;">
                                         Application of Advanced Digital Technologies in Developing Sustainable Supply Chains in the Textile Industry
                                     </strong>
-                                    <p style="margin: 0; font-size: 0.9rem;">
-                                       Analyse des Einsatzes digitaler Technologien wie Datenanalyse und Automatisierung zur Verbesserung von Transparenz, Effizienz und Nachhaltigkeit in globalen Lieferketten der Textilindustrie.
-                                        Untersuchung von Möglichkeiten zur Reduzierung von Ressourcenverbrauch und zur Optimierung logistischer Prozesse durch digitale Lösungen.       
+
+                                    <p style="margin: 0; font-size: 0.9rem;"
+                                    data-de="Analyse des Einsatzes digitaler Technologien wie Datenanalyse und Automatisierung zur Verbesserung von Transparenz, Effizienz und Nachhaltigkeit in globalen Lieferketten der Textilindustrie. Untersuchung von Möglichkeiten zur Reduzierung von Ressourcenverbrauch und zur Optimierung logistischer Prozesse durch digitale Lösungen."
+                                    data-en="Analysis of the use of digital technologies such as data analytics and automation to improve transparency, efficiency, and sustainability in global textile supply chains. Investigation of approaches to reduce resource consumption and optimize logistics processes through digital solutions.">
+                                    Analyse des Einsatzes digitaler Technologien wie Datenanalyse und Automatisierung zur Verbesserung von Transparenz, Effizienz und Nachhaltigkeit in globalen Lieferketten der Textilindustrie.
+                                    Untersuchung von Möglichkeiten zur Reduzierung von Ressourcenverbrauch und zur Optimierung logistischer Prozesse durch digitale Lösungen.
                                     </p>
                                 </div>
 
-                                <div style="flex: 0 0 200px;"> <img src="thesis.png" alt="Bild zur Arbeit" style="width: 100%; height: auto; border-radius: 4px; border: 1px solid #ccc;">
+                                <div style="flex: 0 0 200px;">
+                                    <img src="thesis.png" alt="Bachelor Thesis"
+                                    data-de-alt="Bild zur Arbeit"
+                                    data-en-alt="Thesis image"
+                                    style="width: 100%; height: auto; border-radius: 4px; border: 1px solid #ccc;">
                                 </div>
+
                             </div>
+
                         </div>
 
                         <div>
-                            <h3 style="margin-top: 0; color: #ffffff; border-bottom: 1px solid #ddd; padding-bottom: 5px;">Laborpraktika</h3>
+
+                            <h3 style="margin-top: 0; color: #ffffff; border-bottom: 1px solid #ddd; padding-bottom: 5px;"
+                            data-de="Laborpraktika"
+                            data-en="Laboratory Work">
+                            Laborpraktika
+                            </h3>
+
                             <ul style="margin-top: 10px; padding-left: 20px; font-size: 0.95rem;">
-                                <li><strong>Fertigungstechnisches Praktikum:</strong> Praktische Vertiefung zentraler Fertigungsprozesse des Maschinenbaus, darunter Fertigungsautomatisierung, Kunststoffverarbeitung, photonische Technologien sowie Zerspanung. Durchführung und Analyse experimenteller Versuche mit modernen Messsystemen zur Untersuchung von Kräften, Schwingungen, Werkzeugverschleiß und Oberflächenqualität. Entwicklung praktischer Labor- und Teamkompetenzen durch selbstständige Versuchsdurchführung und Auswertung.</li>
+
+                                <li
+                                data-de="<strong>Fertigungstechnisches Praktikum:</strong> Praktische Vertiefung zentraler Fertigungsprozesse des Maschinenbaus, darunter Fertigungsautomatisierung, Kunststoffverarbeitung, photonische Technologien sowie Zerspanung. Durchführung und Analyse experimenteller Versuche mit modernen Messsystemen zur Untersuchung von Kräften, Schwingungen, Werkzeugverschleiß und Oberflächenqualität. Entwicklung praktischer Labor- und Teamkompetenzen durch selbstständige Versuchsdurchführung und Auswertung."
+                                data-en="<strong>Manufacturing engineering lab:</strong> Practical training in key manufacturing processes in mechanical engineering, including manufacturing automation, plastics processing, photonic technologies, and machining. Execution and analysis of experimental tests using modern measurement systems to investigate forces, vibrations, tool wear, and surface quality. Development of practical lab and teamwork skills through independent experimentation and evaluation.">
+                                <strong>Fertigungstechnisches Praktikum:</strong> Praktische Vertiefung zentraler Fertigungsprozesse des Maschinenbaus, darunter Fertigungsautomatisierung, Kunststoffverarbeitung, photonische Technologien sowie Zerspanung. Durchführung und Analyse experimenteller Versuche mit modernen Messsystemen zur Untersuchung von Kräften, Schwingungen, Werkzeugverschleiß und Oberflächenqualität. Entwicklung praktischer Labor- und Teamkompetenzen durch selbstständige Versuchsdurchführung und Auswertung.
+                                </li>
+
                             </ul>
+
                         </div>
 
                     </div>
@@ -1190,54 +1631,173 @@ Ich zeichne mich durch eine hohe Lösungsorientierung aus und suche nun eine Her
             </div>
         </div>
         <div class="container">
-            <div class="date-bubble date-start">09/2019</div>
+
+            <div class="date-bubble date-start"
+                data-de="09/2019"
+                data-en="Sep 2019">
+                09/2019
+            </div>
+
             <div class="date-line line-top"></div>
-            <div class="date-bubble date-end">10/2018</div>
+
+            <div class="date-bubble date-end"
+                data-de="09/2018"
+                data-en="Sep 2018">
+                09/2018
+            </div>
+
             <div class="date-line line-bottom"></div>
 
             <div class="flip-card h-50" onclick="flipCard(this)">
                 <div class="flip-card-inner">
 
+                    <!-- FRONT -->
                     <div class="flip-card-front">
                         <div class="card-header-row">
-                            <div class="logo-placeholder"><img src="faulogo.png" alt="FAU Logo"></div>
+
+                            <div class="logo-placeholder">
+                                <img src="faulogo.png" alt="FAU Logo">
+                            </div>
+
                             <div class="card-header-text">
-                                <h2>B.Sc. Medizintechnik</h2>
+
+                                <h2 data-de="B.Sc. Medizintechnik"
+                                data-en="B.Sc. Medical Engineering">B.Sc. Medizintechnik</h2>
+
                                 <span class="role">FAU Erlangen-Nürnberg</span>
-                                <div class="sub-info">Keine Fortführung aufgrund fachlicher Neuorientierung</div>
+
+                                <div class="sub-info"
+                                data-de="Keine Fortführung aufgrund fachlicher Neuorientierung"
+                                data-en="Discontinued due to a change in academic focus">
+                                Keine Fortführung aufgrund fachlicher Neuorientierung
+                                </div>
+
                             </div>
                         </div>
-                        <div class="click-hint">Klicke für Details <i class="fas fa-arrow-right"></i></div>
+
+                        <div class="click-hint"
+                            data-de='Klicke für Details <i class="fas fa-arrow-right"></i>'
+                            data-en='Click for details <i class="fas fa-arrow-right"></i>'>
+                            Klicke für Details <i class="fas fa-arrow-right"></i>
+                        </div>
                     </div>
 
+                    <!-- BACK -->
                     <div class="flip-card-back" style="display: flex; flex-direction: column; justify-content: flex-start; align-items: stretch; text-align: left; padding: 25px; gap: 20px; overflow-y: auto;">
-                        <p>Studium nicht fortgeführt aufgrund einer fachlichen Neuorientierung mit klarem Fokuswechsel</p>
+
+                        <p
+                        data-de="Studium nicht fortgeführt aufgrund einer fachlichen Neuorientierung mit klarem Fokuswechsel"
+                        data-en="Studies discontinued due to a strategic change in academic direction and focus toward production engineering and management.">
+                        Studium nicht fortgeführt aufgrund einer fachlichen Neuorientierung mit klarem Fokuswechsel
+                        </p>
+
                     </div>
+
                 </div>
             </div>
         </div>
         <div class="container">
-            <div class="date-bubble date-start">09/2018</div>
+
+            <div class="date-bubble date-start"
+                data-de="09/2018"
+                data-en="Sep 2018">
+                09/2018
+            </div>
+
             <div class="date-line line-top"></div>
-            <div class="date-bubble date-end">05/2015</div>
+
+            <div class="date-bubble date-end"
+                data-de="05/2015"
+                data-en="May 2015">
+                05/2015
+            </div>
+
             <div class="date-line line-bottom"></div>
 
             <div class="flip-card h-200" onclick="flipCard(this)">
                 <div class="flip-card-inner">
+
+                    <!-- FRONT -->
                     <div class="flip-card-front">
                         <div class="card-header-row">
+
                             <div class="card-header-text">
-                                <h2>Umzug nach Deutschland und Teilnahme an Deutschkursen</h2>
+
+                                <h2
+                                data-de="Umzug nach Deutschland und Teilnahme an Deutschkursen"
+                                data-en="Relocation to Germany and German Language Studies">
+                                Umzug nach Deutschland und Teilnahme an Deutschkursen
+                                </h2>
+
                             </div> 
+
                         </div>
-                        <div class="click-hint">Klicke für Details <i class="fas fa-arrow-right"></i></div>
+
+                        <div class="click-hint"
+                            data-de='Klicke für Details <i class="fas fa-arrow-right"></i>'
+                            data-en='Click for details <i class="fas fa-arrow-right"></i>'>
+                            Klicke für Details <i class="fas fa-arrow-right"></i>
+                        </div>
                     </div>
                     <div class="flip-card-back">
                         <ul>
-                            <li><strong>Sprachliche Integration:<br></strong>Aufbau von Deutschkenntnissen von A1 bis C1 durch intensive Sprachkurse.</li>
-                            <li><strong>Integrationskurs:<br></strong>Erfolgreicher Abschluss eines Integrationskurses (B1) am MASK-Zentrum Sprachenschule Nürnberg.</li>
-                            <li><strong>Intensivsprachkurs:<br></strong>bsolvierung eines studienvorbereitenden Intensivsprachkurses Deutsch als Fremdsprache (C1) beim VBA, Otto Benecke Stiftung e.V.</li>
-                            <li><strong>DSH-Vorbereitung:<br></strong>Gezielte Vorbereitung auf die Deutsche Sprachprüfung für den Hochschulzugang (DSH) an der Friedrich-Alexander-Universität Erlangen-Nürnberg sowie erfolgreicher Abschluss der Prüfung</li>
+
+                            <li>
+                                <strong
+                                data-de="Sprachliche Integration:"
+                                data-en="Language Integration:">
+                                Sprachliche Integration:
+                                </strong><br>
+
+                                <span
+                                data-de="Aufbau von Deutschkenntnissen von A1 bis C1 durch intensive Sprachkurse."
+                                data-en="Development of German language proficiency from A1 to C1 through intensive language courses.">
+                                Aufbau von Deutschkenntnissen von A1 bis C1 durch intensive Sprachkurse.
+                                </span>
+                            </li>
+
+                            <li>
+                                <strong
+                                data-de="Integrationskurs:"
+                                data-en="Integration Course:">
+                                Integrationskurs:
+                                </strong><br>
+
+                                <span
+                                data-de="Erfolgreicher Abschluss eines Integrationskurses (B1) am MASK-Zentrum Sprachenschule Nürnberg."
+                                data-en="Successful completion of an integration course (B1) at MASK Language Center in Nuremberg.">
+                                Erfolgreicher Abschluss eines Integrationskurses (B1) am MASK-Zentrum Sprachenschule Nürnberg.
+                                </span>
+                            </li>
+
+                            <li>
+                                <strong
+                                data-de="Intensivsprachkurs:"
+                                data-en="Intensive Language Course:">
+                                Intensivsprachkurs:
+                                </strong><br>
+
+                                <span
+                                data-de="Absolvierung eines studienvorbereitenden Intensivsprachkurses Deutsch als Fremdsprache (C1) beim VBA, Otto Benecke Stiftung e.V."
+                                data-en="Completion of a preparatory intensive German language course (C1) for university studies at VBA, Otto Benecke Foundation.">
+                                Absolvierung eines studienvorbereitenden Intensivsprachkurses Deutsch als Fremdsprache (C1) beim VBA, Otto Benecke Stiftung e.V.
+                                </span>
+                            </li>
+
+                            <li>
+                                <strong
+                                data-de="DSH-Vorbereitung:"
+                                data-en="DSH Exam Preparation:">
+                                DSH-Vorbereitung:
+                                </strong><br>
+
+                                <span
+                                data-de="Gezielte Vorbereitung auf die Deutsche Sprachprüfung für den Hochschulzugang (DSH) an der Friedrich-Alexander-Universität Erlangen-Nürnberg sowie erfolgreicher Abschluss der Prüfung."
+                                data-en="Targeted preparation for the German university entrance exam (DSH) at Friedrich-Alexander University Erlangen-Nuremberg, successfully passed.">
+                                Gezielte Vorbereitung auf die Deutsche Sprachprüfung für den Hochschulzugang (DSH) an der Friedrich-Alexander-Universität Erlangen-Nürnberg sowie erfolgreicher Abschluss der Prüfung.
+                                </span>
+                            </li>
+
                         </ul>
                     </div>
                 </div>
@@ -1252,191 +1812,357 @@ Ich zeichne mich durch eine hohe Lösungsorientierung aus und suche nun eine Her
 
             <div class="flip-card h-200" onclick="flipCard(this)">
                 <div class="flip-card-inner">
+
+                    <!-- FRONT -->
                     <div class="flip-card-front">
                         <div class="card-header-row">
                             <div class="card-header-text">
-                                <h2>Umzug in die Türkei sowie Berufstätigkeit bei Alagoz, Istanbul</h2>
+                                <h2
+                                data-de="Umzug in die Türkei sowie Berufstätigkeit bei Alagöz, Istanbul"
+                                data-en="Relocation to Turkey and professional experience at Alagöz, Istanbul">
+                                Umzug in die Türkei sowie Berufstätigkeit bei Alagöz, Istanbul
+                                </h2>
                             </div>
                         </div>
-                        <div class="click-hint">Klicke für Details <i class="fas fa-arrow-right"></i></div>
+
+                        <div class="click-hint"
+                            data-de='Klicke für Details <i class="fas fa-arrow-right"></i>'
+                            data-en='Click for details <i class="fas fa-arrow-right"></i>'>
+                            Klicke für Details <i class="fas fa-arrow-right"></i>
+                        </div>
                     </div>
+
+                    <!-- BACK -->
                     <div class="flip-card-back">
                         <ul>
-                            <li><strong>Umzug aufgrund der Situation in Syrien:</strong><br>Verlagerung des Lebensmittelpunkts in die Türkei infolge der damaligen Lage in Syrien.</li>
-                            <li><strong>Kaufmännische Tätigkeit:</strong><br>Tätigkeit als kaufmännischer Angestellter im Großhandel bei Alagöz in Istanbul.</li>
-                            <li><strong>Administrative Unterstützung:</strong><br>Mitarbeit im operativen Tagesgeschäft sowie Übernahme administrativer Aufgaben.</li>
-                            <li><strong>Kunden- & Lieferantenkommunikation:</strong><br>Kommunikation mit Geschäftspartnern und Unterstützung bei Bestell- und Warenprozessen.</li>
+
+                            <li 
+                            data-de="<strong>Umzug aufgrund der Situation in Syrien:</strong><br>Verlagerung des Lebensmittelpunkts in die Türkei infolge der damaligen Lage in Syrien."
+                            data-en="<strong>Relocation due to the situation in Syria:</strong><br>Moved to Turkey as a result of the situation in Syria at that time.">
+                            <strong>Umzug aufgrund der Situation in Syrien:</strong><br>
+                            Verlagerung des Lebensmittelpunkts in die Türkei infolge der damaligen Lage in Syrien.
+                            </li>
+
+                            <li 
+                            data-de="<strong>Kaufmännische Tätigkeit:</strong><br>Tätigkeit als kaufmännischer Angestellter im Großhandel bei Alagöz in Istanbul."
+                            data-en="<strong>Commercial role:</strong><br>Worked as a commercial employee in wholesale at Alagöz in Istanbul.">
+                            <strong>Kaufmännische Tätigkeit:</strong><br>
+                            Tätigkeit als kaufmännischer Angestellter im Großhandel bei Alagöz in Istanbul.
+                            </li>
+
+                            <li 
+                            data-de="<strong>Administrative Unterstützung:</strong><br>Mitarbeit im operativen Tagesgeschäft sowie Übernahme administrativer Aufgaben."
+                            data-en="<strong>Administrative support:</strong><br>Supported daily operations and handled administrative tasks.">
+                            <strong>Administrative Unterstützung:</strong><br>
+                            Mitarbeit im operativen Tagesgeschäft sowie Übernahme administrativer Aufgaben.
+                            </li>
+
+                            <li 
+                            data-de="<strong>Kunden- & Lieferantenkommunikation:</strong><br>Kommunikation mit Geschäftspartnern und Unterstützung bei Bestell- und Warenprozessen."
+                            data-en="<strong>Customer & supplier communication:</strong><br>Communicated with business partners and supported order and logistics processes.">
+                            <strong>Kunden- & Lieferantenkommunikation:</strong><br>
+                            Kommunikation mit Geschäftspartnern und Unterstützung bei Bestell- und Warenprozessen.
+                            </li>
+
                         </ul>
                     </div>
+
                 </div>
             </div>
         </div>
         
         <div class="container">
             <div class="timeline-date">
-            <div class="date-line"></div>
-            <div class="date-bubble">bis 2013</div>
+                <div class="date-line"></div>
+                <div class="date-bubble"
+                    data-de="bis 2013"
+                    data-en="until 2013">
+                    bis 2013
+                </div>
             </div>
 
             <div class="flip-card h-200" onclick="flipCard(this)">
                 <div class="flip-card-inner">
+
+                    <!-- FRONT -->
                     <div class="flip-card-front">
                         <div class="card-header-row">
+
                             <div class="logo-placeholder">
-                                <img src="schule.png" alt="PC Logo"></div>
+                                <img src="schule.png" alt="School Logo">
+                            </div>
+
                             <div class="card-header-text">
-                                <h2>Gymnasium</h2>
-                                <span class="role">Mazen Dabbagh Aleppo, Syrien</span>
-                             <div class="sub-info">Abschluss: Allgemeine Hochschulreife</div>
+
+                                <h2 
+                                data-de="Gymnasium" 
+                                data-en="High School">
+                                Gymnasium
+                                </h2>
+
+                                <span class="role"
+                                data-de="Mazen Dabbagh, Aleppo, Syrien"
+                                data-en="Mazen Dabbagh, Aleppo, Syria">
+                                Mazen Dabbagh Aleppo, Syrien
+                                </span>
+
+                                <div class="sub-info"
+                                data-de="Abschluss: Allgemeine Hochschulreife"
+                                data-en="Degree: General Higher Education Entrance Qualification">
+                                Abschluss: Allgemeine Hochschulreife
+                                </div>
+
                             </div>
                         </div>
-                        <div class="click-hint">Klicke für Details <i class="fas fa-arrow-right"></i></div>
+
+                        <div class="click-hint"
+                            data-de='Klicke für Details <i class="fas fa-arrow-right"></i>'
+                            data-en='Click for details <i class="fas fa-arrow-right"></i>'>
+                            Klicke für Details <i class="fas fa-arrow-right"></i>
+                        </div>
                     </div>
+
+                    <!-- BACK -->
                     <div class="flip-card-back">
-                            <p>Naturwissenschaftlicher Zweig</p>
-                    </div> 
-                </div> 
+                        <p
+                        data-de="Naturwissenschaftlicher Zweig"
+                        data-en="Science-focused track">
+                        Naturwissenschaftlicher Zweig
+                        </p>
+                    </div>
+
+                </div>
             </div>
         </div>
 
     </div>
 
-    <h2 class="section-title fade-in" id="skills">Kenntnisse & Sprachen</h2>
+    <h2 class="section-title"
+    data-de="Kenntnisse & Sprachen"
+    data-en="Skills & Languages"
+    >Kenntnisse & Sprachen</h2>
 
-    <div class="skill-category-wrapper fade-in">
-        <h3 class="skill-category-title">ERP & Office</h3>
+    <div class="skill-category-wrapper fade-in" id="skills">
+        <h3 class="skill-category-title"><span data-de="ERP & Office" data-en="ERP & Office">ERP & Office</span></h3>
         <div class="tech-grid">
-            <div class="tech-item" data-tooltip="Langjährige Erfahrung aus Beruf und Studium"><i class="fab fa-windows"></i>MS-Office</div>
-            <div class="tech-item" data-tooltip="Langjährige Erfahrung aus Beruf und Studium"><i class="fab fa-google"></i>Google Workspace</div>
-            <div class="tech-item" data-tooltip="Selbststudium"><i class="fas fa-database"></i>SAP</div>
+            <div class="tech-item" data-tooltip="Extensive experience from work and studies"><i class="fab fa-windows"></i>MS-Office</div>
+            <div class="tech-item" data-tooltip="Extensive experience from work and studies"><i class="fab fa-google"></i>Google Workspace</div>
+            <div class="tech-item" data-tooltip="Self-taught"><i class="fas fa-database"></i>SAP</div>
         </div>
     </div>
    
 
     <div class="skill-category-wrapper fade-in">
-        <h3 class="skill-category-title">CAD & Design</h3>
+        <h3 class="skill-category-title"><span data-de="CAD & Design" data-en="CAD & Design">CAD & Design</span></h3>
         <div class="tech-grid">
-            <div class="tech-item" data-tooltip="Uni (Praktika)"><i class="fas fa-drafting-compass"></i>Creo Parametric</div>
-            <div class="tech-item" data-tooltip="Selbststudium"><i class="fas fa-cube"></i>Adobe Photoshop</div>
-            <div class="tech-item" data-tooltip="Selbststudium"><i class="fas fa-chalkboard"></i>Canva</div>
+            <div class="tech-item" data-tooltip="Uni"><i class="fas fa-drafting-compass"></i>Creo Parametric</div>
+            <div class="tech-item" data-tooltip="Self-taught"><i class="fas fa-cube"></i>Adobe Photoshop</div>
+            <div class="tech-item" data-tooltip="Self-taught"><i class="fas fa-chalkboard"></i>Canva</div>
         </div>
     </div>
 
     <div class="skill-category-wrapper fade-in">
-        <h3 class="skill-category-title">Simulation & Analyse</h3>
+        <h3 class="skill-category-title"><span data-de="Simulation & Analyse" data-en="Simulation & Analysis">Simulation & Analyse</span></h3>
         <div class="tech-grid">
-            <div class="tech-item" data-tooltip="Uni (Masterarbeit)"><i class="fa fa-bar-chart"></i>MAXQUDA</div>
-            <div class="tech-item" data-tooltip="Uni (Praktika)"><i class="fas fa-chart-line"></i>MATLAB</div>
+            <div class="tech-item" data-tooltip="Uni"><i class="fa fa-bar-chart"></i>MAXQUDA</div>
+            <div class="tech-item" data-tooltip="Uni"><i class="fas fa-chart-line"></i>MATLAB</div>
         </div>
     </div>
 
     <div class="skill-category-wrapper fade-in">
-        <h3 class="skill-category-title">Programmierung</h3>
+        <h3 class="skill-category-title"><span data-de="Programmierung" data-en="Programming">Programmierung</span></h3>
         <div class="tech-grid">
             <div class="tech-item" data-tooltip="Uni"><i class="fab fa-java"></i>Java</div>
-            <div class="tech-item" data-tooltip="Uni & Arbeit"><i class="fab fa-python"></i>Python</div>
-            <div class="tech-item" data-tooltip="Arbeit"><i class="fab fa-sql"></i>SQL</div>
-            <div class="tech-item" data-tooltip="Arbeit & Selbststudium"><i class="fab fa-html5"></i>HTML</div>
+            <div class="tech-item" data-tooltip="Uni & Work"><i class="fab fa-python"></i>Python</div>
+            <div class="tech-item" data-tooltip="Work"><i class="fab fa-sql"></i>SQL</div>
+            <div class="tech-item" data-tooltip="Work"><i class="fab fa-html5"></i>HTML</div>
         </div>
     </div>
 
     <div class="skill-category-wrapper fade-in">
-        <h3 class="skill-category-title">Projekt & Organisation</h3>
+        <h3 class="skill-category-title"><span data-de="Projekt & Organisation" data-en="Project & Organization">Projekt & Organisation</span></h3>
         <div class="tech-grid">
-            <div class="tech-item" data-tooltip="Arbeit"><i class="fas fa-cogs"></i>Siemens Polarion ALM</div>
-            <div class="tech-item" data-tooltip="Selbststudium"><i class="fas fa-dice-d6"></i>Notion</div>
-            <div class="tech-item" data-tooltip="Selbststudium"><i class="fas fa-bullseye"></i>Obsidian</div>
-            <div class="tech-item" data-tooltip="Selbststudium"><i class="fas fa-cog"></i>Jira</div>
+            <div class="tech-item" data-tooltip="Work"><i class="fas fa-cogs"></i>Siemens Polarion ALM</div>
+            <div class="tech-item" data-tooltip="Self-taught"><i class="fas fa-dice-d6"></i>Notion</div>
+            <div class="tech-item" data-tooltip="Self-taught"><i class="fas fa-bullseye"></i>Obsidian</div>
+            <div class="tech-item" data-tooltip="Self-taught"><i class="fas fa-cog"></i>Jira</div>
         </div>
     </div>
     
- </div>
+   
 
     <br>
 
-    <h3 style="text-align:center; color:#666; margin-bottom:30px; margin-top:50px;">Sprachen</h3>
+    <h3 style="text-align:center; color:#666; margin-bottom:30px; margin-top:50px;"
+    data-de="Sprachen"
+    data-en="Languages">
+    Sprachen
+    </h3>
+
     <div class="skills-container fade-in">
+
         <div class="skill-box">
-            <div class="skill-title"><span>Deutsch (Verhandlungssicher C1)</span><span>90%</span></div>
+            <div class="skill-title">
+                <span
+                data-de="Deutsch (Verhandlungssicher C1)"
+                data-en="German (Professional proficiency C1)">
+                Deutsch (Verhandlungssicher C1)
+                </span>
+                <span>90%</span>
+            </div>
             <div class="skill-bar">
                 <div class="skill-fill" style="width: 90%"></div>
             </div>
         </div>
+
         <div class="skill-box">
-            <div class="skill-title"><span>Englisch (Verhandlungssicher C1)</span><span>90%</span></div>
+            <div class="skill-title">
+                <span
+                data-de="Englisch (Verhandlungssicher C1)"
+                data-en="English (Professional proficiency C1)">
+                Englisch (Verhandlungssicher C1)
+                </span>
+                <span>90%</span>
+            </div>
             <div class="skill-bar">
                 <div class="skill-fill" style="width: 90%"></div>
             </div>
         </div>
+
         <div class="skill-box">
-            <div class="skill-title"><span>Arabisch (Muttersprache C2)</span><span>100%</span></div>
+            <div class="skill-title">
+                <span
+                data-de="Arabisch (Muttersprache C2)"
+                data-en="Arabic (Native proficiency C2)">
+                Arabisch (Muttersprache C2)
+                </span>
+                <span>100%</span>
+            </div>
             <div class="skill-bar">
                 <div class="skill-fill" style="width: 100%"></div>
             </div>
         </div>
-                <div class="skill-box">
-            <div class="skill-title"><span>Türksich (Gute Kenntnisse B1)</span><span>50%</span></div>
+
+        <div class="skill-box">
+            <div class="skill-title">
+                <span
+                data-de="Türkisch (Gute Kenntnisse B1)"
+                data-en="Turkish (Intermediate B1)">
+                Türkisch (Gute Kenntnisse B1)
+                </span>
+                <span>50%</span>
+            </div>
             <div class="skill-bar">
                 <div class="skill-fill" style="width: 50%"></div>
             </div>
         </div>
+
     </div>
 
-    <h2 class="section-title fade-in" id="hobbys">Interessen & Engagement</h2>
-    <div class="hobbies-grid">
+    <h2 class="section-title"
+    data-de="Interessen & Engagement"
+    data-en="Interests & Activities">
+    Interessen & Engagement
+    </h2>
+
+    <div class="hobbies-grid" id="hobbys">
 
         <div class="hobby-item fade-in">
             <div class="hobby-icon"><i class="fas fa-dumbbell"></i></div>
             <div class="hobby-text-box">
-                <span class="hobby-title-text">Sport</span>
-                <div class="hobby-desc">Fitness, Fußball<br>& Schach</div>
+
+                <span class="hobby-title-text"
+                data-de="Sport"
+                data-en="Sports">
+                Sport
+                </span>
+
+                <div class="hobby-desc"
+                data-de="Fitness, Fußball<br>& Schach"
+                data-en="Fitness, Football (Soccer)<br>& Chess">
+                Fitness, Fußball<br>& Schach
+                </div>
+
             </div>
         </div>
 
         <div class="hobby-item fade-in">
             <div class="hobby-icon"><i class="fas fa-camera-retro"></i></div>
             <div class="hobby-text-box">
-                <span class="hobby-title-text">Kreativität</span>
-                <div class="hobby-desc">Fotografie<br>& Kochen</div>
+
+                <span class="hobby-title-text"
+                data-de="Kreativität"
+                data-en="Creativity">
+                Kreativität
+                </span>
+
+                <div class="hobby-desc"
+                data-de="Fotografie<br>& Kochen"
+                data-en="Photography<br>& Cooking">
+                Fotografie<br>& Kochen
+                </div>
+
             </div>
         </div>
 
         <div class="hobby-item fade-in">
             <div class="hobby-icon"><i class="fas fa-hand-holding-heart"></i></div>
             <div class="hobby-text-box">
-                <span class="hobby-title-text">Ehrenamt</span>
-                <div class="hobby-desc">ERBEŞ Förderverein <br> & Mathe-Nachhilfe für Schulkinder</div>
+
+                <span class="hobby-title-text"
+                data-de="Ehrenamt"
+                data-en="Volunteering">
+                Ehrenamt
+                </span>
+
+                <div class="hobby-desc"
+                data-de="ERBEŞ Förderverein <br> & Mathe-Nachhilfe für Schulkinder"
+                data-en="ERBEŞ support association <br> & Math tutoring for school students">
+                ERBEŞ Förderverein <br> & Mathe-Nachhilfe für Schulkinder
+                </div>
+
             </div>
         </div>
 
     </div>
 
-    <h2 class="section-title fade-in" id="zeugnisse">Zeugnisse & Dokumente</h2>
+    <h2 class="section-title fade-in" id="zeugnisse" data-de="Zeugnisse & Dokumente" data-en="Certificates & Documents">Zeugnisse & Dokumente</h2>
     <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; max-width: 1000px; margin: 0 auto 60px auto; padding: 0 20px;">
         
-        <a class="cert-btn fade-in" title="Wird noch ausgestellt">
-            <i class="fas fa-file-pdf"></i> Masterurkunde
+        <a href="masterurkunde.pdf" target="_blank" class="cert-btn fade-in"> 
+            <i class="fas fa-file-pdf"></i>     
+            <span data-de="Masterurkunde" data-en="Master's Degree Certificate">Masterurkunde</span> 
         </a>
         <a href="bachelor.pdf" target="_blank" class="cert-btn fade-in">
-            <i class="fas fa-file-pdf"></i> Bachelorurkunde
+            <i class="fas fa-file-pdf"></i>
+            <span data-de="Bachelorurkunde" data-en="Bachelor's Degree Certificate">Bachelorurkunde</span> 
         </a>
 
         <a href="arbeitszeugnis.pdf" target="_blank" class="cert-btn fade-in">
-            <i class="fas fa-file-pdf"></i> Arbeitszeugnis Valeo eAutomotive Germany GmbH
+            <i class="fas fa-file-pdf"></i>
+            <span data-de="Arbeitszeugnis Valeo eAutomotive Germany GmbH" data-en="Employment Reference - Valeo eAutomotive Germany GmbH">Arbeitszeugnis Valeo eAutomotive Germany GmbH</span> 
+        </a>
+        <a href="peek_cloppenburg.pdf" target="_blank" class="cert-btn fade-in">
+            <i class="fas fa-file-pdf"></i>
+            <span data-de="Arbeitszeugnis Peek & Cloppenburg" data-en="Employment Reference - Peek & Cloppenburg">Arbeitszeugnis Peek & Cloppenburg</span> 
         </a>
 
         <a href="intego.pdf" target="_blank" class="cert-btn fade-in">
-            <i class="fas fa-file-pdf"></i> Praktikumszeugnis Intgo GmbH
+            <i class="fas fa-file-pdf"></i>
+            <span data-de="Praktikumszeugnis Intego GmbH" data-en="Internship Certificate - Intego GmbH">Praktikumszeugnis Intego GmbH</span> 
         </a>
 
         <a href="agiles_projektmanagement.pdf" target="_blank" class="cert-btn fade-in">
-            <i class="fas fa-file-pdf"></i> Teilnahmebescheinigung Agiles Projektmanagement
+            <i class="fas fa-file-pdf"></i>
+            <span data-de="Teilnahmebescheinigung Agiles Projektmanagement" data-en="Certificate of Participation - Agile Project Management">Teilnahmebescheinigung Agiles Projektmanagement</span>
         </a>
 
     </div>
 
+    </div>
     <div class="contact-section" id="kontakt">
-        <h2 style="color:#000000; margin-top:0;">Kontakt</h2>
+        <h2 style="color:#000000; margin-top:0;" data-de="Kontakt"
+        data-en="Contact">Kontakt</h2>
         <div class="contact-info">
 
             <div>
@@ -1447,8 +2173,8 @@ Ich zeichne mich durch eine hohe Lösungsorientierung aus und suche nun eine Her
 
             <div>
                 <a href="https://www.linkedin.com/in/khaled-siraj-542609268/" target="_blank" class="contact-link">
-                    <i class="fab fa-linkedin" style="color: #507aa3; font-size: 1.2rem;"></i> 
-                    LinkedIn Profil aufrufen
+                    <i class="fab fa-linkedin" style="color: #507aa3; font-size: 1.2rem;"></i>
+                    <span data-de="LinkedIn Profil aufrufen" data-en="View LinkedIn Profile">LinkedIn Profil aufrufen</span>
                 </a>
             </div>
 
@@ -1529,22 +2255,36 @@ Ich zeichne mich durch eine hohe Lösungsorientierung aus und suche nun eine Her
             card.classList.toggle("active");
         }
         function setLanguage(lang){
-            document.querySelectorAll("[data-de]").forEach(el=>{
-                el.textContent = el.getAttribute("data-" + lang)
-            })
-            }
+            localStorage.setItem("lang", lang)
 
-            const observer = new IntersectionObserver(entries => {
+            document.querySelectorAll("[data-de]").forEach(el=>{
+                if(el.tagName === "INPUT" || el.tagName === "TEXTAREA"){
+                    el.placeholder = el.getAttribute("data-" + lang)
+                } else {
+                    el.innerHTML = el.getAttribute("data-" + lang)
+                }
+            })
+
+            document.querySelectorAll("[data-de-alt]").forEach(el=>{
+                el.alt = el.getAttribute("data-" + lang + "-alt")
+            })
+        }
+
+        const observer = new IntersectionObserver(entries => {
                 entries.forEach(entry => {
                 if(entry.isIntersecting){
                 entry.target.classList.add("show")
                 }
                 })
-                })
+        })
 
-            document.querySelectorAll(".fade-in").forEach(el=>{
+        document.querySelectorAll(".fade-in").forEach(el=>{
             observer.observe(el)
-            })
+        })
+        window.onload = () => {
+            const savedLang = localStorage.getItem("lang") || "de"
+            setLanguage(savedLang)
+        }
             
     </script>
 </body>
